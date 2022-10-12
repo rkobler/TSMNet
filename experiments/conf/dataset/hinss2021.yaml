@@ -1,0 +1,16 @@
+# name of the dataset
+name: Hinss2021
+# python type (and parameters)
+type:
+    _target_: datasetio.eeg.moabb.Hinss2021
+
+classes: ["easy", "medium", "difficult"]
+# channel selection
+channels: ['FP1', 'FP2', 'FPz', 'AF7', 'AF3', 'AFz', 'AF4', 'AF8', 'F7', 'F5', 'F3', 'F1', 'F2', 'F4', 'F6', 'F8', 'FC5', 'FC3', 'FC1', 'FCz', 'FC2', 'FC4', 'FC6', 'C3', 'C4', 'CPz', 'PO3', 'PO4', 'POz', 'Oz' ]
+# if 'null' or not defined, all available channels will be used
+# resampling
+# if 'null' or not defined, the datasets sampling frequency will be used
+# resample: 250 # Hz
+## epoching (relative to TASK CUE onset, as defined in the dataset)
+tmin: 0.0
+tmax: 1.996

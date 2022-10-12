@@ -1,0 +1,13 @@
+defaults:
+    - cnnnet
+    - _self_
+name: CNNNet+MBN
+model:
+    bnorm: bn
+    bnorm_dispersion: VECTOR
+scheduler:
+    _target_: spdnets.batchnorm.MomentumBatchNormScheduler
+    epochs: ${sub:${fit.epochs},10}
+    bs: ${rdiv:${fit.batch_size_train},${fit.domains_per_batch}}
+    bs0: ${fit.batch_size_train}
+    tau0: 0.85

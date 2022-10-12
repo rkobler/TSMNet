@@ -1,0 +1,18 @@
+# name of the dataset
+name: Stieger2021
+# python type (and parameters)
+type:
+    _target_: datasetio.eeg.moabb.Stieger2021
+    sessions: [4,5,6,7,8,9,10,11]
+    channels: ['F5', 'F3', 'F1', 'Fz', 'F2', 'F4', 'F6', 'FC5', 'FC3', 'FC1', 'FC2', 'FC4', 'FC6', 'C5',  'C3',  'C1',  'Cz',  'C2',  'C4',  'C6', 'CP5', 'CP3', 'CP1', 'CPz', 'CP2', 'CP4', 'CP6', 'P5', 'P3', 'P1', 'Pz', 'P2', 'P4', 'P6']
+    srate: 250 #Hz
+
+classes: ["left_hand", "right_hand","both_hand","rest"]
+# channel selection
+# if 'null' or not defined, all available channels will be used
+# resampling
+# if 'null' or not defined, the datasets sampling frequency will be used
+# resample: 250 # Hz
+## epoching (relative to TASK CUE onset, as defined in the dataset)
+tmin: 1.0
+tmax: 2.996

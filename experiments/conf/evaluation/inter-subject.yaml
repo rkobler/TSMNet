@@ -1,0 +1,3 @@
+strategy: inter-subject
+adapt:
+  name: 'no'

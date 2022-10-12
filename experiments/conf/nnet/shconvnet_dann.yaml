@@ -1,0 +1,14 @@
+name: ShConvNet+DANN
+inputtype: ${torchdtype:float32}
+model:
+    _target_: spdnets.models.DANNShallowConvNet
+    spatial_filters: 40
+    temporal_filters: 40
+    daloss_scaling: 0.05 # same as Ozdenizci et al. 2020
+    dann_mode: ganin2016
+optimizer:
+    _target_: torch.optim.Adam
+    weight_decay: 0
+    lr: 1e-3
+scheduler:
+    _target_: spdnets.batchnorm.DummyScheduler

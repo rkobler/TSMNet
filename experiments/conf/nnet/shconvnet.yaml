@@ -1,0 +1,12 @@
+name: ShConvNet
+inputtype: ${torchdtype:float32}
+model:
+    _target_: spdnets.models.ShallowConvNet
+    spatial_filters: 40
+    temporal_filters: 40
+optimizer:
+    _target_: torch.optim.Adam
+    weight_decay: 0
+    lr: 1e-3
+scheduler:
+    _target_: spdnets.batchnorm.DummyScheduler

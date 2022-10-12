@@ -1,0 +1,15 @@
+name: EEGNet+DANN
+inputtype: ${torchdtype:float32}
+model:
+    _target_: spdnets.models.DANNEEGNet
+    is_within: False
+    f1: 8
+    d: 2
+    daloss_scaling: 0.03  # same as Ozdenizci et al. 2020
+    dann_mode: ganin2016
+optimizer:
+    _target_: torch.optim.Adam
+    weight_decay: 0
+    lr: 1e-3
+scheduler:
+    _target_: spdnets.batchnorm.DummyScheduler

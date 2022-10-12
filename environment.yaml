@@ -1,0 +1,36 @@
+name: spddsmbn-venv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+   # basic programs
+   - python==3.8.*
+   - pip
+   # scientific python base packages
+   - numpy==1.20.*
+   - pandas==1.2.*
+   - scipy==1.6.*
+   # jupyter notebooks
+   - ipykernel
+   - notebook
+   - jupyterlab
+   - nb_conda_kernels
+   # python visualization
+   - matplotlib==3.4.*
+   - seaborn==0.11.*
+   # machine learning
+   - scikit-learn==1.0.*
+   - pytorch==1.9.*
+   - torchvision==0.10.*
+   - skorch==0.11.*
+   - pip:
+      # m/eeg analysis
+      - mne==0.22.*
+      - moabb==0.4.*
+      # command line interfacing
+      - hydra-core==1.1.*
+      # machine learning
+      - pyriemann==0.2.*
+      - git+https://github.com/geoopt/geoopt.git@524330b11c0f9f6046bda59fe334803b4b74e13e
+      # this package
+      - -e .

@@ -1,0 +1,19 @@
+name: TSMNet
+inputtype: ${torchdtype:float32}
+model:
+    _target_: spdnets.models.TSMNet
+    temporal_filters: 4
+    spatial_filters: 40
+    subspacedims: 20
+    bnorm: null
+    bnorm_dispersion: null
+optimizer:
+    _target_: geoopt.optim.RiemannianAdam
+    weight_decay: 1e-4
+    lr: 1e-3
+    param_groups:
+        -
+            - 'spdnet.*.W'
+            - weight_decay: 0
+scheduler:
+    _target_: spdnets.batchnorm.DummyScheduler

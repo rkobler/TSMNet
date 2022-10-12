@@ -1,0 +1,16 @@
+# name of the dataset
+name: BNCI2014001
+# python type (and parameters)
+type:
+    _target_: datasetio.eeg.moabb.BNCI2014001
+
+classes: ["left_hand", "right_hand", "feet", "tongue"]
+# channel selection
+# if 'null' or not defined, all available channels will be used
+channels: null
+# resampling
+# if 'null' or not defined, the datasets sampling frequency will be used
+resample: null
+## epoching (relative to TASK CUE onset, as defined in the dataset)
+tmin: 0.5
+tmax: 3.496

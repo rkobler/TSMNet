@@ -1,0 +1,57 @@
+\begin{tabular}{llllll}
+\toprule
+    & dataset & \multicolumn{2}{l}{BNCI2014001} & \multicolumn{2}{l}{BNCI2015001} \\
+    & evaluation &      inter-session &    inter-subject &      inter-session &      inter-subject \\
+adaptation & method &                    &                  &                    &                    \\
+\midrule
+no & FBCSP+SVM &    \sig60.6\phantom{0}(\phantom{0}4.9) &  \sig32.3\phantom{0}(\phantom{0}7.3) &   \ssig81.5\phantom{0}(\phantom{0}4.4) &   \ssig58.6\phantom{0}(13.4) \\
+    & TSM+SVM &   \ssig61.8\phantom{0}(\phantom{0}4.1) &  \sig34.7\phantom{0}(\phantom{0}8.6) &  \sssig75.7\phantom{0}(\phantom{0}5.1) &  \sssig56.0\phantom{0}(\phantom{0}6.0) \\
+    & FB+TSM+LR &       \phantom{0}69.8\phantom{0}(\phantom{0}4.8) &  \sig36.5\phantom{0}(\phantom{0}8.2) &    \sig80.9\phantom{0}(\phantom{0}6.0) &   \ssig60.6\phantom{0}(10.9) \\
+    & EEGNet &  \sssig41.8\phantom{0}(\phantom{0}5.8) &  \sig43.3\phantom{0}(17.0) &  \sssig72.4\phantom{0}(\phantom{0}8.4) &  \sssig59.2\phantom{0}(\phantom{0}9.5) \\
+    & ShConvNet &  \sssig51.3\phantom{0}(\phantom{0}2.3) &  \sig42.2\phantom{0}(16.2) &  \sssig74.1\phantom{0}(\phantom{0}4.2) &  \sssig58.7\phantom{0}(\phantom{0}5.8) \\
+uda & FBCSP+DSS+LDA &       \phantom{0}71.3\phantom{0}(\phantom{0}1.8) &     \phantom{0}48.3\phantom{0}(14.3) &       \phantom{0}84.6\phantom{0}(\phantom{0}4.8) &   \ssig67.7\phantom{0}(14.3) \\
+    & URPA+MDM &  \sssig59.5\phantom{0}(\phantom{0}2.7) &     \phantom{0}46.8\phantom{0}(14.6) &  \sssig79.2\phantom{0}(\phantom{0}4.6) &   \ssig70.3\phantom{0}(16.1) \\
+    & SPDOT+TSM+SVM &       \phantom{0}66.8\phantom{0}(\phantom{0}3.8) &  \sig38.6\phantom{0}(\phantom{0}8.6) &  \sssig77.5\phantom{0}(\phantom{0}2.9) &  \sssig63.3\phantom{0}(\phantom{0}8.1) \\
+    & EEGNet+DANN &  \sssig50.0\phantom{0}(\phantom{0}7.7) &     \phantom{0}45.8\phantom{0}(18.0) &  \sssig71.6\phantom{0}(\phantom{0}5.3) &  \sssig63.7\phantom{0}(11.1) \\
+    & ShConvNet+DANN &  \sssig51.6\phantom{0}(\phantom{0}3.2) &  \sig42.2\phantom{0}(13.6) &  \sssig74.1\phantom{0}(\phantom{0}4.0) &  \sssig64.2\phantom{0}(11.6) \\
+    & TSMNet+SPDDSMBN &       \phantom{0}69.0\phantom{0}(\phantom{0}3.6) &     \phantom{0}51.6\phantom{0}(16.5) &       \phantom{0}85.8\phantom{0}(\phantom{0}4.3) &       \phantom{0}77.0\phantom{0}(13.7) \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{llllll}
+\toprule
+    & dataset & \multicolumn{2}{l}{Lee2019} & \multicolumn{2}{l}{Stieger2021} \\
+    & evaluation &      inter-session &      inter-subject &      inter-session &      inter-subject \\
+adaptation & method &                    &                    &                    &                    \\
+\midrule
+no & FBCSP+SVM &  \sssig63.1\phantom{0}(\phantom{0}4.2) &  \sssig63.4\phantom{0}(12.1) &  \sssig47.5\phantom{0}(\phantom{0}7.0) &  \sssig37.6\phantom{0}(10.5) \\
+    & TSM+SVM &  \sssig62.5\phantom{0}(\phantom{0}3.3) &  \sssig65.3\phantom{0}(13.0) &  \sssig49.5\phantom{0}(\phantom{0}8.1) &  \sssig40.2\phantom{0}(12.3) \\
+    & FB+TSM+LR &   \ssig65.2\phantom{0}(\phantom{0}4.5) &  \sssig68.5\phantom{0}(12.4) &  \sssig57.3\phantom{0}(\phantom{0}7.3) &  \sssig40.3\phantom{0}(\phantom{0}9.2) \\
+    & EEGNet &  \sssig51.2\phantom{0}(\phantom{0}2.7) &  \sssig69.6\phantom{0}(13.8) &  \sssig58.3\phantom{0}(\phantom{0}7.9) &   \ssig43.1\phantom{0}(11.0) \\
+    & ShConvNet &  \sssig57.8\phantom{0}(\phantom{0}4.0) &  \sssig68.5\phantom{0}(13.6) &  \sssig60.1\phantom{0}(\phantom{0}6.6) &  \sssig42.2\phantom{0}(10.4) \\
+uda & FBCSP+DSS+LDA &       \phantom{0}66.8\phantom{0}(\phantom{0}4.1) &  \sssig68.7\phantom{0}(13.8) &  \sssig59.4\phantom{0}(\phantom{0}6.6) &   \ssig48.2\phantom{0}(13.4) \\
+    & URPA+MDM &  \sssig63.8\phantom{0}(\phantom{0}4.2) &  \sssig66.7\phantom{0}(12.3) &  \sssig47.0\phantom{0}(\phantom{0}6.6) &  \sssig38.7\phantom{0}(10.4) \\
+    & SPDOT+TSM+SVM &   \ssig65.6\phantom{0}(\phantom{0}4.2) &  \sssig65.4\phantom{0}(10.5) &  \sssig50.3\phantom{0}(\phantom{0}5.8) &  \sssig42.1\phantom{0}(10.5) \\
+    & EEGNet+DANN &  \sssig55.4\phantom{0}(\phantom{0}4.4) &  \sssig69.4\phantom{0}(13.1) &  \sssig60.1\phantom{0}(\phantom{0}6.9) &   \ssig43.6\phantom{0}(10.7) \\
+    & ShConvNet+DANN &  \sssig59.1\phantom{0}(\phantom{0}3.4) &  \sssig66.0\phantom{0}(12.4) &  \sssig61.3\phantom{0}(\phantom{0}6.0) &  \sssig43.1\phantom{0}(11.5) \\
+    & TSMNet+SPDDSMBN &       \phantom{0}68.2\phantom{0}(\phantom{0}4.1) &       \phantom{0}74.6\phantom{0}(14.2) &       \phantom{0}64.8\phantom{0}(\phantom{0}6.8) &       \phantom{0}48.9\phantom{0}(14.3) \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{llllll}
+\toprule
+    & dataset &       Lehner2021 &    Hehenberger2021 & \multicolumn{2}{l}{Hinss2021} \\
+    & evaluation &    inter-session &      inter-session &      inter-session &      inter-subject \\
+adaptation & method &                  &                    &                    &                    \\
+\midrule
+no & FBCSP+SVM &     \phantom{0}68.9\phantom{0}(\phantom{0}6.0) &   \ssig52.5\phantom{0}(\phantom{0}7.1) &  \sssig43.7\phantom{0}(\phantom{0}8.2) &       \phantom{0}45.6\phantom{0}(\phantom{0}6.5) \\
+    & TSM+SVM &     \phantom{0}62.7\phantom{0}(\phantom{0}9.1) &  \sssig44.8\phantom{0}(\phantom{0}7.3) &  \sssig36.8\phantom{0}(\phantom{0}4.5) &   \ssig41.7\phantom{0}(\phantom{0}7.4) \\
+    & FB+TSM+LR &     \phantom{0}73.0\phantom{0}(\phantom{0}9.6) &   \ssig52.2\phantom{0}(\phantom{0}6.0) &  \sssig40.8\phantom{0}(\phantom{0}7.1) &    \sig45.1\phantom{0}(\phantom{0}5.0) \\
+    & EEGNet &  \sig49.6\phantom{0}(\phantom{0}6.4) &  \sssig48.2\phantom{0}(\phantom{0}6.3) &   \ssig46.3\phantom{0}(10.1) &       \phantom{0}47.8\phantom{0}(\phantom{0}5.1) \\
+    & ShConvNet &  \sig56.3\phantom{0}(\phantom{0}7.3) &  \sssig53.0\phantom{0}(\phantom{0}5.1) &       \phantom{0}48.9\phantom{0}(\phantom{0}7.4) &    \sig45.9\phantom{0}(\phantom{0}6.8) \\
+uda & FBCSP+DSS+LDA &     \phantom{0}77.1\phantom{0}(\phantom{0}8.4) &       \phantom{0}56.4\phantom{0}(\phantom{0}5.3) &   \ssig47.1\phantom{0}(\phantom{0}7.4) &       \phantom{0}48.4\phantom{0}(\phantom{0}9.0) \\
+    & URPA+MDM &     \phantom{0}70.8\phantom{0}(\phantom{0}8.2) &  \sssig46.6\phantom{0}(\phantom{0}7.2) &       \phantom{0}51.4\phantom{0}(\phantom{0}3.7) &       \phantom{0}48.4\phantom{0}(\phantom{0}6.1) \\
+    & SPDOT+TSM+SVM &  \sig63.0\phantom{0}(\phantom{0}9.2) &  \sssig45.9\phantom{0}(\phantom{0}6.0) &  \sssig42.0\phantom{0}(\phantom{0}4.7) &  \sssig40.4\phantom{0}(\phantom{0}7.5) \\
+    & EEGNet+DANN &  \sig49.8\phantom{0}(\phantom{0}3.7) &  \sssig49.3\phantom{0}(\phantom{0}6.7) &    \sig49.4\phantom{0}(\phantom{0}6.8) &       \phantom{0}50.0\phantom{0}(\phantom{0}7.3) \\
+    & ShConvNet+DANN &  \sig57.5\phantom{0}(\phantom{0}7.6) &    \sig54.0\phantom{0}(\phantom{0}5.1) &       \phantom{0}51.5\phantom{0}(\phantom{0}4.9) &       \phantom{0}48.8\phantom{0}(\phantom{0}5.7) \\
+    & TSMNet+SPDDSMBN &     \phantom{0}77.7\phantom{0}(10.0) &       \phantom{0}57.8\phantom{0}(\phantom{0}5.8) &       \phantom{0}54.7\phantom{0}(\phantom{0}7.3) &       \phantom{0}52.4\phantom{0}(\phantom{0}8.8) \\
+\bottomrule
+\end{tabular}

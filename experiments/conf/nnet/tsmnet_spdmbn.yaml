@@ -1,0 +1,21 @@
+defaults:
+    - tsmnet
+    - _self_
+name: TSMNet+SPDMBN
+model:
+    bnorm: spdbn
+    bnorm_dispersion: SCALAR
+scheduler:
+    _target_: spdnets.batchnorm.MomentumBatchNormScheduler
+    epochs: ${sub:${fit.epochs},10}
+    bs: ${fit.batch_size_train}
+    bs0: ${mul:${.bs},10}
+    tau0: 0.35
+optimizer:
+    param_groups:
+        - 
+            - 'spd*.mean'
+            - weight_decay: 0
+        -       
+            - 'spdnet.*.W'
+            - weight_decay: 0      

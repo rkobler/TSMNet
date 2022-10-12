@@ -1,0 +1,6 @@
+defaults:
+ - inter-subject
+ - _self_
+adapt:
+  name: uda
+  nadapt_domain: 1. # int -> absolute number of observations per CLASS

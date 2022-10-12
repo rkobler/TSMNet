@@ -1,0 +1,3 @@
+strategy: within-session
+adapt:
+  name: 'no'

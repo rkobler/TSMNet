@@ -1,0 +1,14 @@
+name: CNNNet
+inputtype: ${torchdtype:float32}
+model:
+    _target_: spdnets.models.CNNNet
+    temporal_filters: 4
+    spatial_filters: 40
+    bnorm: null
+    bnorm_dispersion: null
+optimizer:
+    _target_: torch.optim.Adam
+    weight_decay: 0
+    lr: 1e-3
+scheduler:
+    _target_: spdnets.batchnorm.DummyScheduler

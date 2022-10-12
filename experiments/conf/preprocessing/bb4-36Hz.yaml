@@ -1,0 +1,9 @@
+bb4-36Hz:
+    _target_: library.utils.moabb.CachedMotorImagery
+    fmin:  4 # Hz
+    fmax: 36 # Hz
+    events: ${dataset.classes}
+    channels: ${oc.select:dataset.channels}
+    resample: ${oc.select:dataset.resample}
+    tmin: ${oc.select:dataset.tmin, 0.0}
+    tmax: ${oc.select:dataset.tmax}

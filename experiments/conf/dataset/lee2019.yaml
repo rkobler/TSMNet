@@ -1,0 +1,17 @@
+# name of the dataset
+name: Lee2019
+# python type (and parameters)
+type:
+    _target_: datasetio.eeg.moabb.Lee2019
+
+classes: ["left_hand", "right_hand"]
+# channel selection
+# if 'null' or not defined, all available channels will be used
+channels: ['FC5', 'FC3', 'FC1', 'FC2', 'FC4', 'FC6', 'C5',  'C3',  'C1',  'Cz',  'C2',  'C4',  'C6', 'CP5', 'CP3', 'CP1', 'CPz', 'CP2', 'CP4', 'CP6']
+# channels: null
+# resampling
+# if 'null' or not defined, the datasets sampling frequency will be used
+resample: 250 # Hz
+## epoching (relative to TASK CUE onset, as defined in the dataset)
+tmin: 1.
+tmax: 3.5

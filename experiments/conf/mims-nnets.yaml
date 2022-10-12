@@ -1,0 +1,23 @@
+defaults:
+  - _self_
+  - dataset: bnci2014001
+  - evaluation: inter-session+uda
+  - preprocessing: bb4-36Hz
+  - nnet: tsmnet_spddsmbn
+fit:
+  stratified: True
+  epochs: 50
+  batch_size_train: 50
+  domains_per_batch: 5
+  batch_size_test: -1
+  validation_size: 0.2 #0.1 # float <1 for fraction; int for specific number
+  test_size: 0.05 # percent of groups/domains used for testing
+
+score: balanced_accuracy # sklearn scores
+
+hydra:
+  run:
+    dir: outputs/${dataset.name}
+  sweep:
+    dir: outputs/${dataset.name}
+    subdir: '.'

@@ -1,0 +1,3 @@
+strategy: inter-session
+adapt:
+  name: 'no'

@@ -1,0 +1,19 @@
+defaults:
+    - tsmnet
+    - _self_
+name: TSMNet+SPDDSBN
+model:
+    bnorm: spddsbn
+    bnorm_dispersion: SCALAR
+scheduler:
+    _target_: spdnets.batchnorm.ConstantMomentumBatchNormScheduler
+    eta: 0.1
+    eta_test: 0.1
+optimizer:
+    param_groups:
+        - 
+            - 'spd*.mean'
+            - weight_decay: 0
+        -       
+            - 'spdnet.*.W'
+            - weight_decay: 0
