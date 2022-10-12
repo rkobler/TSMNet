@@ -4,7 +4,7 @@
 
 # SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG
 
-This repository contains code and data accompanying the NeurIPS 2022 publication with the title *SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG*. [[preprint](https://arxiv.org/abs/2206.01323)], [[publication](https://img.shields.io/badge/OpenReview|forum-pp7onaiM4VB-8c1b13)].
+This repository contains code and data accompanying the NeurIPS 2022 publication with the title *SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG*. [[preprint](https://arxiv.org/abs/2206.01323)], [[publication](https://openreview.net/pdf?id=pp7onaiM4VB)].
 
 ## Requirements
 
